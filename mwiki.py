@@ -56,19 +56,6 @@ def recursive_overwrite(src, dest, ignore=None):
                                     ignore)
     else:
         shutil.copyfile(src, dest)
-
-def scan(): 
-    global index,gitpath,use_github,github_push_every,cloud_path;
-    index=index+1;
-    os.system(git_path+'git add * > /dev/null');      
-    os.system(git_path+'git commit -am "python auto commit" > /dev/null');
-    if use_github:
-        if not index%github_push_every:
-            os.system("git push");
-    if cloud_path:
-        recursive_overwrite(".git",cloud_path)
-
-
 while 1:
     if wait_next:
         time.sleep(1);
@@ -82,7 +69,14 @@ while 1:
         mtime_pre=mtime;
     if wait_next:
         if not changed:                             
-            scan();                        
+            index=index+1;
+            os.system(git_path+'git add * > /dev/null');      
+            os.system(git_path+'git commit -am "python auto commit" > /dev/null');
+            if use_github:
+                if not index%github_push_every:
+                    os.system("git push");
+            # if cloud_path:
+            #     recursive_overwrite(".git",cloud_path)                        
             wait_next=0;
     else:
         if changed:
