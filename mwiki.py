@@ -64,7 +64,7 @@ while 1:
         statinfo=os.stat(download_path)
         mtime=statinfo.st_mtime;
     changed=0;
-    print(mtime,mtime_pre)
+
     if mtime!=mtime_pre:
         changed=1;
         mtime_pre=mtime;
