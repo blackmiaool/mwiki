@@ -75,7 +75,7 @@ while 1:
             os.system(git_path+'git commit -am "python auto commit" > /dev/null');
             if use_github:
                 if not index%github_push_every:
-                    os.system("git push");
+                    os.system("git push -q");
             # if cloud_path:
             #     recursive_overwrite(".git",cloud_path)                        
             wait_next=0;
