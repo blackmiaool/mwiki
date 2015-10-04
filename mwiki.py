@@ -2,7 +2,7 @@ import os,sys,time,re,shutil,distutils;
 
 ####### configuration #######
 if os.name=='posix':#linux
-    download_path=r'.';
+    download_path=r'./tiddlers';
     git_path=r'';
     cloud_path=r'/home/blackmiaool/Nutstore/mwiki/.git';
 elif os.name=='nt':#windows
