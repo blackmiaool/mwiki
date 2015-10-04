@@ -58,9 +58,9 @@ def recursive_overwrite(src, dest, ignore=None):
         shutil.copyfile(src, dest)
 while 1:
     if wait_next:
-        time.sleep(1);
+        time.sleep(5);
     else:
-        time.sleep(0.5);
+        time.sleep(5);
         statinfo=os.stat(download_path)
         mtime=statinfo.st_mtime;
     changed=0;
