@@ -2,7 +2,7 @@ import os,sys,time,re,shutil,distutils;
 
 ####### configuration #######
 if os.name=='posix':#linux
-    download_path=r'./';
+    download_path=r'';
     git_path=r'';
     cloud_path=r'/home/blackmiaool/Nutstore/mwiki/.git';
 elif os.name=='nt':#windows
@@ -57,14 +57,35 @@ def recursive_overwrite(src, dest, ignore=None):
     else:
         shutil.copyfile(src, dest)
 
-def scan(): 
-    os.system(git_path+'git add * > /dev/null');      
-    os.system(git_path+'git commit -am "python auto commit" > /dev/null');
-    if use_github:
-        if not index%github_push_every:
-            os.system("git push -q");
-    if cloud_path:
-        recursive_overwrite(".git",cloud_path)
+def scan():
+    global index,new_file_mtime;
+    index=index+1;        
+    # print("scan",index);
+    files=os.listdir(download_path);
+    mtime=0;
+    new_file="";
+    wiki_files=[];
+    for f in files:
+        if pattern.match(f):
+            statinfo=os.stat(download_path+f);
+            wiki_files.append(f);
+            if  statinfo.st_mtime>mtime:
+                mtime=statinfo.st_mtime;
+                new_file=f;
+    if mtime>new_file_mtime:
+        new_file_mtime=mtime;
+        for f in wiki_files:
+            if f != new_file:
+                os.remove(download_path+f);
+        shutil.copy(download_path+new_file,wiki_name+".html");
+        if new_file != wiki_name+".html":
+            os.rename(download_path+new_file,download_path+wiki_name+".html");        
+        os.system(git_path+'git commit --quiet -am "python auto commit" > /dev/null');
+        if use_github:
+            if not index%github_push_every:
+                os.system("git push -q");
+        if cloud_path:
+            recursive_overwrite(".git",cloud_path)
 
 
 while 1:
