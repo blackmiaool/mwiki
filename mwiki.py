@@ -58,6 +58,8 @@ def recursive_overwrite(src, dest, ignore=None):
         shutil.copyfile(src, dest)
 
 def scan(): 
+    global index,gitpath,use_github,github_push_every,cloud_path;
+    index=index+1;
     os.system(git_path+'git add * > /dev/null');      
     os.system(git_path+'git commit -am "python auto commit" > /dev/null');
     if use_github:
