@@ -75,7 +75,7 @@ while 1:
             os.system(git_path+'git commit -am "python auto commit" > /dev/null');
             if use_github:
                 if not index%github_push_every:
-                    os.system("git push -q");
+                    os.system("git push  > /dev/null");
             if cloud_path:
                 os.system(git_path+'git pull bak master > /dev/null');                       
                 os.system(git_path+'git push bak master > /dev/null');    
