@@ -1,8 +1,8 @@
 created: 20151005114042295
-modified: 20151005120851687
+modified: 20151005121333783
 tags: 
 title: New Tiddler 22
-type: text/x-sh
+type: text/html
 
 #!/bin/bash
 
