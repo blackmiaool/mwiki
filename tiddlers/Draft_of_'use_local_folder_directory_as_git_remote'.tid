@@ -1,0 +1,11 @@
+created: 20151005091622710
+draft.of: use local folder/directory as git remote
+draft.title: use local folder/directory as git remote
+modified: 20151005123815848
+tags: 
+title: Draft of 'use local folder/directory as git remote'
+type: text/x-sh
+
+cd ~/Nutstore/mwiki
+git init --bare
+cd 
