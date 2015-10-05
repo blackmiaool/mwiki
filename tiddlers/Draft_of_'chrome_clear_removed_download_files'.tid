@@ -1,0 +1,9 @@
+created: 20151004083636648
+draft.of: chrome clear removed download files
+draft.title: chrome clear removed download files
+modified: 20151005133429285
+tags: 
+title: Draft of 'chrome clear removed download files'
+type: application/javascript
+
+(function(){var nodes=document.querySelectorAll("span.name,.status");for(var i in nodes){var toremove=[];if(nodes[i].innerHTML=="mwiki.html"||nodes[i].innerHTML=="Removed"){toremove.push(nodes[i]);};for(var i in toremove){toremove[i].parentNode.parentNode.querySelector('[i18n-content="control_removefromlist"]').click()}}})()
