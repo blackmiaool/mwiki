@@ -76,8 +76,9 @@ while 1:
             if use_github:
                 if not index%github_push_every:
                     os.system("git push -q");
-            # if cloud_path:
-            #     recursive_overwrite(".git",cloud_path)                        
+            if cloud_path:
+                os.system(git_path+'git pull bak master > /dev/null');                       
+                os.system(git_path+'git push bak master > /dev/null');    
             wait_next=0;
     else:
         if changed:
