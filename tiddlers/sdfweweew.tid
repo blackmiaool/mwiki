@@ -1,9 +1,10 @@
 created: 20151005114042295
-modified: 20151005121555222
+modified: 20151005121837415
 tags: 
 title: sdfweweew
 type: application/x-sh
 
+``` bash
 #!/bin/bash
 
 # clone the repository
@@ -27,3 +28,4 @@ for pid in `ps aux | grep 'node ../server.js' | awk '{print $2}'` ; do
 done
 
 exit 0
+```
