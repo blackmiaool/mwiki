@@ -1,9 +1,11 @@
 created: 20151005091622710
-modified: 20151005123814408
+modified: 20151005123824896
 tags: 
 title: use local folder/directory as git remote
 type: text/x-sh
 
+```bash
 cd ~/Nutstore/mwiki
 git init --bare
 cd 
+```
