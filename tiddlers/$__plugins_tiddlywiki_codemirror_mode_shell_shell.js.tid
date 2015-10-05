@@ -1,5 +1,5 @@
 created: 20151005110113099
-modified: 20151005114519653
+modified: 20151005121518912
 module-type: library
 tags: 
 title: $:/plugins/tiddlywiki/codemirror/mode/shell/shell.js
@@ -141,6 +141,6 @@ CodeMirror.defineMode('shell', function() {
   };
 });
 
-CodeMirror.defineMIME('text/x-sh', 'shell');
+CodeMirror.defineMIME('application/x-sh', 'shell');
 
 });
