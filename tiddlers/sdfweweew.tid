@@ -1,10 +1,10 @@
 created: 20151005114042295
-modified: 20151005121837415
+modified: 20151005121936184
 tags: 
 title: sdfweweew
 type: application/x-sh
 
-``` bash
+```bash
 #!/bin/bash
 
 # clone the repository
