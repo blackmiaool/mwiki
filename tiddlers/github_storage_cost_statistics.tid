@@ -1,5 +1,5 @@
 created: 20151003123044180
-modified: 20151005134154125
+modified: 20151005134203228
 tags: 
 title: github storage cost statistics
 type: application/javascript
@@ -18,4 +18,4 @@ console.log(cost / 1000 + "MB");
 
 
 
-https: //github.com/settings/repositories
+https://github.com/settings/repositories
