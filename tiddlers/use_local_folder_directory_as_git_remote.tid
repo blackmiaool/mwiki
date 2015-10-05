@@ -1,11 +1,17 @@
 created: 20151005091622710
-modified: 20151005123824896
+modified: 20151005124723296
 tags: 
 title: use local folder/directory as git remote
 type: text/x-sh
 
 ```bash
+# config target directory
 cd ~/Nutstore/mwiki
 git init --bare
-cd 
+
+# config working directory
+git remote add  bak ~/Nutstore/mwiki
+
+# push
+git push bak master
 ```
