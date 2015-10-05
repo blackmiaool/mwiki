@@ -1,0 +1,9 @@
+created: 20151005091622710
+modified: 20151005105839929
+tags: 
+title: use local folder/directory as git remote
+type: text/vnd.tiddlywiki
+
+cd ~/Nutstore/mwiki
+git init --bare
+cd 
