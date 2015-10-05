@@ -1,7 +1,18 @@
 created: 20151004083636648
-modified: 20151004084819184
+modified: 20151005133556220
 tags: 
 title: chrome clear removed download files
-type: text/vnd.tiddlywiki
+type: application/javascript
 
-(function(){var nodes=document.querySelectorAll("span.name,.status");for(var i in nodes){var toremove=[];if(nodes[i].innerHTML=="mwiki.html"||nodes[i].innerHTML=="Removed"){toremove.push(nodes[i]);};for(var i in toremove){toremove[i].parentNode.parentNode.querySelector('[i18n-content="control_removefromlist"]').click()}}})()
+(function () {
+    var nodes = document.querySelectorAll("span.name,.status");
+    for (var i in nodes) {
+        var toremove = [];
+        if (nodes[i].innerHTML == "mwiki.html" || nodes[i].innerHTML == "Removed") {
+            toremove.push(nodes[i]);
+        }
+        for (var i in toremove) {
+            toremove[i].parentNode.parentNode.querySelector('[i18n-content="control_removefromlist"]').click()
+        }
+    }
+})()
