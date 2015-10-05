@@ -1,5 +1,5 @@
-created: 20151005111823178
-list: [[Draft of 'New Tiddler 3']] $:/plugins/tiddlywiki/codemirror/mode/shell/shell.js $:/plugins/tiddlywiki/codemirror [[Draft of 'use local folder/directory as git remote']] [[github storage cost statistics]] $:/plugins/tiddlywiki/codemirror/usage $:/config/CodeMirror $:/plugins/tiddlywiki/codemirror/readme GettingStarted
+created: 20151005112149739
+list: [[Draft of 'New Tiddler 3']] $:/config/EditorTypeMappings/text/x-sh $:/plugins/tiddlywiki/codemirror/mode/shell/shell.js $:/plugins/tiddlywiki/codemirror [[Draft of 'use local folder/directory as git remote']] [[github storage cost statistics]] $:/plugins/tiddlywiki/codemirror/usage $:/config/CodeMirror $:/plugins/tiddlywiki/codemirror/readme GettingStarted
 title: $:/StoryList
 type: text/vnd.tiddlywiki
 
