@@ -1,6 +1,6 @@
 created: 20151005134234973
 description: Bright tiddlers on a muted background
-modified: 20151005134244442
+modified: 20151005134357318
 name: Muted
 tags: $:/tags/Palette
 title: $:/palettes/Muted
@@ -47,7 +47,7 @@ modal-header-border: #eeeeee
 muted-foreground: #bbb
 notification-background: #ffffdd
 notification-border: #999999
-page-background: #6f6f70
+page-background: #8d8d8d
 pre-background: #f5f5f5
 pre-border: #cccccc
 primary: #29a6ee
@@ -58,8 +58,8 @@ sidebar-foreground-shadow: rgba(255,255,255,0)
 sidebar-foreground: #d3d2d4
 sidebar-muted-foreground-hover: #444444
 sidebar-muted-foreground: #c0c0c0
-sidebar-tab-background-selected: #6f6f70
-sidebar-tab-background: #666667
+sidebar-tab-background-selected: #2c2c2d
+sidebar-tab-background: #383838
 sidebar-tab-border-selected: #999
 sidebar-tab-border: #515151
 sidebar-tab-divider: #999
