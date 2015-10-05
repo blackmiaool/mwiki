@@ -60,7 +60,7 @@ while 1:
     if wait_next:
         time.sleep(5);
     else:
-        time.sleep(5);
+        time.sleep(2);
         statinfo=os.stat(download_path)
         mtime=statinfo.st_mtime;
     changed=0;
