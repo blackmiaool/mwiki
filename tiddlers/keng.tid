@@ -1,16 +1,11 @@
 created: 20151005164936460
-modified: 20151006024608319
+modified: 20151006055355040
 tags: 
 title: keng
 type: text/vnd.tiddlywiki
 
 |!name|!kind|!process|!index|
-|科协浮生记|SPA|plot just start|<span class="m-cnt-index">index</span>|
-|miaoADB|chrome extension|just change icon|<span class="m-cnt-index">index</span>|
-<script>
-var ds=document.querySelectorAll(".m-cnt-index");
-Array.prototype.forEach.call(ds,function(d){
-	console.log(d.innerHTML);
-})
-</script>
+|科协浮生记|SPA|plot just start|
+|miaoADB|chrome extension|just change icon|
+
 
