@@ -1,0 +1,18 @@
+created: 20151005164936460
+draft.of: keng
+draft.title: keng
+modified: 20151006055342999
+tags: 
+title: Draft of 'keng'
+type: text/vnd.tiddlywiki
+
+|!name|!kind|!process|!index|
+|科协浮生记|SPA|plot just start|<span class="m-cnt-index">index</span>|
+|miaoADB|chrome extension|just change icon|
+<script>
+var ds=document.querySelectorAll(".m-cnt-index");
+Array.prototype.forEach.call(ds,function(d){
+	console.log(d.innerHTML);
+})
+</script>
+
