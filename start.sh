@@ -1,1 +1,2 @@
-tiddlywiki . --server
+tiddlywiki . --server &
+python mwiki.py

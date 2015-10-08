@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-created: 20151007130111949
-list: $:/plugins/danielo/encryptTiddler/encrypttiddler.js $:/plugins/danielo/encryptTiddler/language/batch $:/plugins/danielo/encryptTiddler/control-panel $:/plugins/danielo/encryptTiddler GettingStarted
-=======
-created: 20151007152242874
-list: $:/ControlPanel GettingStarted
->>>>>>> f2dbde419aa780da24d4cdeb198f7bf1891f5caf
+list: GettingStarted
 title: $:/StoryList
-type: text/vnd.tiddlywiki
 
