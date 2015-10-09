@@ -1,9 +1,7 @@
 created: 20151009085046656
-draft.of: New Tiddler
-draft.title: 
-modified: 20151009085050587
+modified: 20151009085059293
 tags: 
-title: Draft of 'New Tiddler'
+title: github remote revert
 type: text/vnd.tiddlywiki
 
 I solved problem like yours by this commands:
