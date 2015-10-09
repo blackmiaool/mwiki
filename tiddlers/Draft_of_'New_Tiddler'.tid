@@ -1,0 +1,12 @@
+created: 20151009085046656
+draft.of: New Tiddler
+draft.title: 
+modified: 20151009085050587
+tags: 
+title: Draft of 'New Tiddler'
+type: text/vnd.tiddlywiki
+
+I solved problem like yours by this commands:
+
+git reset --hard <commit-hash> 
+git push -f <remote> <local branch>:<remote branch> 
